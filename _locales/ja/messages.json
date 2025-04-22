@@ -1,0 +1,20 @@
+{
+    "extName": {
+        "message": "フィッシングアラート"
+    },
+    "extDescription": {
+        "message": "初めてアクセスしたサイトでパスワードを入力しようとした際に警告を表示します。"
+    },
+    "title": {
+        "message": "フィッシング確認"
+    },
+    "message": {
+        "message": "このブラウザで $URL$ に初めてアクセスしました。\nもし過去にアクセスしたはずであれば、このサイトは偽物の可能性があります。",
+        "placeholders": {
+            "url": {
+                "content": "$1",
+                "example": "https://www.example.com"
+            }
+        }
+    }
+}

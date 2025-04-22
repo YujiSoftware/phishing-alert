@@ -1,0 +1,20 @@
+{
+    "extName": {
+        "message": "Phishing Alert"
+    },
+    "extDescription": {
+        "message": "A warning will be displayed when you try to enter your password on a site you visit for the first time."
+    },
+    "title": {
+        "message": "Phishing confirmation"
+    },
+    "message": {
+        "message": "This is your first time visiting $URL$ on this browser. \nIf you've visited it before, this site may be a fake.",
+        "placeholders": {
+            "url": {
+                "content": "$1",
+                "example": "https://www.example.com"
+            }
+        }
+    }
+}

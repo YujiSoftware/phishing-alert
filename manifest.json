@@ -1,0 +1,40 @@
+{
+    "name": "__MSG_extName__",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "description": "__MSG_extDescription__",
+    "default_locale": "en",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "@phishing-alert"
+        }
+    },
+    "permissions": [
+        "history"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "48": "alert.png"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "scripts": [
+        "background.js"
+      ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
