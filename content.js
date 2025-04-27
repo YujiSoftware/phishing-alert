@@ -29,13 +29,13 @@ function hook(node) {
             title.style.all = "initial";
             title.style.fontWeight = "bold";
             title.style.fontSize = "14px";
-            title.appendChild(document.createTextNode(browser.i18n.getMessage("title")));
+            title.appendChild(document.createTextNode(chrome.i18n.getMessage("title")));
             popup.appendChild(title);
 
             const message = document.createElement("p");
             message.style.all = "initial";
             message.style.fontSize = "14px";
-            for (const text of browser.i18n.getMessage("message", location.origin).split("\n")) {
+            for (const text of chrome.i18n.getMessage("message", location.origin).split("\n")) {
                 message.appendChild(document.createTextNode(text));
                 message.appendChild(document.createElement("br"));
             }
