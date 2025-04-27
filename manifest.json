@@ -17,7 +17,9 @@
         "https://*/*"
     ],
     "icons": {
-        "48": "alert.png"
+        "32": "icon/alert_32.png",
+        "48": "icon/alert_48.png",
+        "128": "icon/alert_128.png"
     },
     "background": {
       "service_worker": "background.js",
