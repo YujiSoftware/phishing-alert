@@ -1,5 +1,9 @@
 function hook(node) {
-    const inputs = node.querySelectorAll("input[type='password']");
+    const inputs = Array.from(node.querySelectorAll("input[type='password']"));
+    if (node.nodeName === "INPUT" && node.type === "password") {
+        inputs.push(node);
+    }
+
     for (let input of inputs) {
         input.addEventListener("focus", (e) => {
             const rect = e.target.getBoundingClientRect();
