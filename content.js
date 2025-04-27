@@ -8,8 +8,8 @@ function hook(node) {
             popup.style.position = "absolute";
             popup.style.backgroundColor = "lightyellow";
             popup.style.zIndex = "99999";
-            popup.style.left = `${rect.left}px`;
-            popup.style.top = `${rect.top + rect.height}px`;
+            popup.style.left = `${window.scrollX + rect.left}px`;
+            popup.style.top = `${window.scrollY + rect.top + rect.height}px`;
             popup.style.padding = "10px";
             popup.style.borderRadius = "8px";
             popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
